@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Deck rclone — personal encrypted backups</title>
+<style>
+body{font:18px/1.65 system-ui,sans-serif;max-width:740px;margin:10vh auto;padding:0 24px;color:#233245;background:#f7f9fc}
+h1{font-size:2.3rem;line-height:1.15}h2{font-size:1.25rem;margin-top:2rem}a{color:#1557a0}footer{margin-top:3rem;border-top:1px solid #cad4e0;padding-top:1rem;font-size:.9rem}
+@media(prefers-color-scheme:dark){body{color:#e4eaf2;background:#16202e}a{color:#9ac9ff}footer{border-color:#405069}}
+</style>
+<main>
+<h1>Deck rclone</h1>
+<p>A personal backup configuration using rclone and restic to save and restore encrypted backups in the owner's Google Drive.</p>
+<h2>What it does</h2>
+<p>Backup files are encrypted on the owner's computer before upload. The utility uploads encrypted files, reads its backup repository, and downloads files when testing or performing a restore.</p>
+<h2>Why it requests Google Drive access</h2>
+<p>The backup configuration requests Google's <code>drive.file</code> permission, covering files created or opened through the app. It uses that access to maintain its dedicated backup repository.</p>
+<h2>Personal use</h2>
+<p>This configuration is operated by its owner. It does not offer public accounts or a public backup service.</p>
+<p><a href="privacy.html">Read the privacy policy</a> for details about Google data, storage, and revoking access.</p>
+</main>
+<footer>Deck rclone · Personal backup utility</footer>
+</html>
